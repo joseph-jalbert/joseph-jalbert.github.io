@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>script inserted iframe navigation &mdash; Bad Ad Examples</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="An iframe embedded in the page contains another which triggers an external navigation ('redirect')" />
+</head>
+<body>
+	<div id="soul">
+		<header id="header">
+			<h1><a href="https://joseph-jalbert.github.io">Bad Ad Examples</a></h1>
+		</header>
+
+		<h1>Nested Iframe "Redirect"</h1>
+		<div class="ad-content" id="div1">
+			<iframe src="iframe2.html"></iframe>
+		</div>
+		<div class="ad-content" id="div2">
+			<iframe src="iframe2.html"></iframe>
+		</div>
+		<div class="ad-content" id="div3">
+			<iframe src="iframe2.html"></iframe>
+		</div>
+		<div class="ad-content" id="div4">
+			<iframe id="target"></iframe>
+			<script src="iframe_injector.js"></script>
+		</div>
+		<div class="ad-content" id="div5">
+			<iframe src="iframe2.html"></iframe>
+		</div>
+	
+	</div>
+</body>
+</html>
