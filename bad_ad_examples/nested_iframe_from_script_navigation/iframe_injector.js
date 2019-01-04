@@ -11,7 +11,9 @@ const html = `<!doctype html>
 			here is the ad
 		</div>
 		<script>
-			window.top.location = 'https://www.google.com?iframe';
+			setTimeout( function() {
+				window.top.location = 'https://www.google.com?iframe';
+			}, 15000)
 		</script>
 	</div>
 </body>
